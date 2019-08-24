@@ -1,0 +1,16 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: dubbo-consumer
+
+embedded:
+  zookeeper:
+    port: 2181
+
+dubbo:
+  registry:
+    address: 127.0.0.1:${embedded.zookeeper.port}
+    protocol: zookeeper
+    file: ${user.home}/dubbo-cache/${spring.application.name}/dubbo.cache

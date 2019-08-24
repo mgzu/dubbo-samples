@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: dubbo-provider
+
+embedded:
+  zookeeper:
+    port: 2181
+
+dubbo:
+  scan:
+    base-packages: com.github.mgzu.provider.service
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address: 127.0.0.1:${embedded.zookeeper.port}
+    protocol: zookeeper
+    client: curator
+    file: ${user.home}/dubbo-cache/${spring.application.name}/dubbo.cache
