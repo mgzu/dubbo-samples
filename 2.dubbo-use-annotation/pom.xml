@@ -7,7 +7,7 @@
     <groupId>com.github.mgzu.dubbo</groupId>
     <artifactId>dubbo-use-annotation</artifactId>
     <packaging>pom</packaging>
-    <version>0.1</version>
+    <version>${revision}</version>
 
     <modules>
         <module>dubbo-demo-api</module>
@@ -21,6 +21,7 @@
         <dubbo.version>2.7.3</dubbo.version>
         <junit.version>4.12</junit.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+        <reversion>0.1</reversion>
     </properties>
 
     <dependencies>

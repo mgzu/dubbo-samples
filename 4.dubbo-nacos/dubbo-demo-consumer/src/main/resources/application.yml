@@ -7,6 +7,5 @@ spring:
 
 dubbo:
   registry:
-    address: 127.0.0.1:2181
-    protocol: zookeeper
-    client: curator
+    address: 127.0.0.1:8848
+    protocol: nacos

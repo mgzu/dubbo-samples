@@ -5,7 +5,7 @@
     <parent>
         <artifactId>dubbo-use-annotation</artifactId>
         <groupId>com.github.mgzu.dubbo</groupId>
-        <version>0.1</version>
+        <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>dubbo-demo-consumer</artifactId>
@@ -14,12 +14,7 @@
         <dependency>
             <artifactId>dubbo-demo-api</artifactId>
             <groupId>com.github.mgzu.dubbo</groupId>
-            <version>0.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.netflix.curator</groupId>
-            <artifactId>curator-framework</artifactId>
-            <version>1.1.10</version>
+            <version>${revision}</version>
         </dependency>
     </dependencies>
 </project>
