@@ -4,7 +4,8 @@ dubbo 相关案例
 # 环境
 jdk 8  
 [zookeeper](https://zookeeper.apache.org/releases.html) 3.5.5  
-[nacos](https://github.com/alibaba/nacos/releases) 1.1.3
+[nacos](https://github.com/alibaba/nacos/releases) 1.4.0  
+> nacos 启动命令 startup.cmd -m standalone
 
 # 项目列表
 1. dubbo-demo 使用 zookeeper 作为注册中心

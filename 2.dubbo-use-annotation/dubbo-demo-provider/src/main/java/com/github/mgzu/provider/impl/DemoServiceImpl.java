@@ -1,9 +1,9 @@
 package com.github.mgzu.provider.impl;
 
 import com.github.mgzu.api.DemoService;
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 
-@Service(version = "0.1")
+@DubboService(version = "0.1")
 public class DemoServiceImpl implements DemoService {
 
     @Override

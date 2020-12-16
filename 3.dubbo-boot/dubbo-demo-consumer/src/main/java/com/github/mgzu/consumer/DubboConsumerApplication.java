@@ -2,17 +2,17 @@ package com.github.mgzu.consumer;
 
 import com.github.mgzu.api.DemoService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.dubbo.config.annotation.Reference;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @Slf4j
-@EnableAutoConfiguration
+@SpringBootApplication
 public class DubboConsumerApplication {
 
-    @Reference(version = "1.0.1")
+    @DubboReference(version = "1.0.1")
     private DemoService demoService;
 
     public static void main(String[] args) {

@@ -1,10 +1,10 @@
 package com.github.mgzu.provider.service;
 
 import com.github.mgzu.api.DemoService;
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Value;
 
-@Service(version = "1.0.1")
+@DubboService(version = "1.0.1")
 public class DefaultDemoService implements DemoService {
 
     @Value("${dubbo.application.name}")

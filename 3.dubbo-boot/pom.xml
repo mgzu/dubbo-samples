@@ -18,10 +18,9 @@
         <java.source.version>1.8</java.source.version>
         <java.target.version>1.8</java.target.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
-        <dubbo.version>2.7.3</dubbo.version>
-        <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
-        <dubbo-starter.version>2.7.3</dubbo-starter.version>
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <dubbo.version>2.7.8</dubbo.version>
+        <spring-boot.version>2.4.1</spring-boot.version>
         <revision>0.1</revision>
     </properties>
 
@@ -52,7 +51,7 @@
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>${dubbo-starter.version}</version>
+            <version>${dubbo.version}</version>
         </dependency>
 
         <dependency>
