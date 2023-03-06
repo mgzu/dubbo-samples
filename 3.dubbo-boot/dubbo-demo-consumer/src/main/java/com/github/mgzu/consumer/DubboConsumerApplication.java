@@ -16,13 +16,12 @@ public class DubboConsumerApplication {
     private DemoService demoService;
 
     public static void main(String[] args) {
-        SpringApplication.run(DubboConsumerApplication.class).close();
+        SpringApplication.run(DubboConsumerApplication.class);
+        Runtime.getRuntime().exit(0);
     }
 
     @Bean
     public ApplicationRunner runner() {
-        return args -> {
-            log.info(demoService.sayHello("dubbo"));
-        };
+        return args -> log.info(demoService.sayHello("dubbo"));
     }
 }

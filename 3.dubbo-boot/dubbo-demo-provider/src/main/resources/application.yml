@@ -12,6 +12,11 @@ dubbo:
     name: dubbo
     port: 20880
   registry:
-    address: 127.0.0.1:2181
+    id: zk-registry
+    address: zookeeper://127.0.0.1:2181
     protocol: zookeeper
     client: curator
+  config-center:
+    address: zookeeper://127.0.0.1:2181
+  metadata-report:
+    address: zookeeper://127.0.0.1:2181

@@ -1,17 +1,38 @@
 # dubbo-nacos
+
 dubbo 使用 nacos 作为注册中心
 
 ## 环境准备
-> [] 中为服务启动的端口
+
+| 框架/软件       | 版本           |
+|-------------|--------------|
+| jdk         | 17           |
+| double      | 3.2.0-beta.5 |
+| spring-boot | 3.0.4        |
+| nacos       | 2.1.2        |
+
+## 启动顺序
 
 1. nacos[8848]
 2. provider[8081]
 3. consumer[8082]
 
-## 启动顺序
+> 序号为启动顺序，[] 中为服务端口
+
+启动 nacos
+
+```
+// windows
+startup.cmd -m standalone
+// *unix
+startup.sh -m standalone
+```
+
 启动 DubboProviderApplication 前需要先启动 nacos。
+
 1. com.github.mgzu.provider.DubboProviderApplication
 2. com.github.mgzu.consumer.DubboConsumerApplication
 
 ## 存在问题
-* provider 注册时会警告
+
+* consumer、provider 启动时会有 WARN 日志
