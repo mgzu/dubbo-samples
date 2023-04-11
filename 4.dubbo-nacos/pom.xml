@@ -15,14 +15,18 @@
     </modules>
 
     <properties>
+        <revision>0.1</revision>
         <java.source.version>1.8</java.source.version>
         <java.target.version>1.8</java.target.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <dubbo.version>3.2.0-beta.5</dubbo.version>
-        <spring-boot.version>3.0.4</spring-boot.version>
+        <!-- dependencies version -->
+        <dubbo.version>3.2.0-beta.6</dubbo.version>
+        <spring-boot.version>3.0.5</spring-boot.version>
         <nacos-client.version>2.1.2</nacos-client.version>
-        <revision>0.1</revision>
+        <junit.version>5.9.2</junit.version>
+        <!-- maven plugin -->
+        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
+        <flatten-maven-plugin.version>1.4.1</flatten-maven-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -93,6 +97,39 @@
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>flatten-maven-plugin</artifactId>
+                <configuration>
+                    <flattenMode>resolveCiFriendliesOnly</flattenMode>
+                    <updatePomFile>true</updatePomFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>flatten</goal>
+                        </goals>
+                        <id>flatten</id>
+                        <phase>process-resources</phase>
+                    </execution>
+                    <execution>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                        <id>flatten.clean</id>
+                        <phase>clean</phase>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>flatten-maven-plugin</artifactId>
+                    <version>${flatten-maven-plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 </project>
