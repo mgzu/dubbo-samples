@@ -1,3 +1,7 @@
+# IntelliJ Files
+.idea
+*.iml
+
 # Maven
 /target
 **/.flattened-pom.xml

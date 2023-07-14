@@ -16,14 +16,12 @@
 
     <properties>
         <revision>0.1</revision>
-        <java.source.version>1.8</java.source.version>
-        <java.target.version>1.8</java.target.version>
+        <java.source.version>17</java.source.version>
+        <java.target.version>17</java.target.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- dependencies version -->
-        <dubbo.version>3.2.0-beta.6</dubbo.version>
-        <spring-boot.version>3.0.5</spring-boot.version>
-        <nacos-client.version>2.1.2</nacos-client.version>
-        <junit.version>5.9.2</junit.version>
+        <dubbo.version>3.2.4</dubbo.version>
+        <spring-boot.version>3.1.1</spring-boot.version>
         <!-- maven plugin -->
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <flatten-maven-plugin.version>1.4.1</flatten-maven-plugin.version>

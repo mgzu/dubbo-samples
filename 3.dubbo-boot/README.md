@@ -4,12 +4,12 @@ dubbo 集成 boot
 
 ## 环境准备
 
-| 框架/软件       | 版本           |
-|-------------|--------------|
-| jdk         | 17           |
-| double      | 3.2.0-beta.5 |
-| spring-boot | 3.0.3        |
-| zookeeper   | 3.8.1        |
+| 框架/软件   | 版本  |
+| ----------- | ----- |
+| jdk         | 17    |
+| double      | 3.2.4 |
+| spring-boot | 3.1.1 |
+| zookeeper   | 3.8.1 |
 
 1. zookeeper[2181]
 2. provider[8081]
