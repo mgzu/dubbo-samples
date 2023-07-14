@@ -1,0 +1,12 @@
+version: '3.9'
+name: 'dubbo-demo-nacos'
+services:
+  nacos:
+    image: nacos/nacos-server:v2.2.3
+    container_name: nacos
+    ports:
+      - "8848:8848"
+      - "9848:9848"
+      - "9849:9849"
+    environment:
+      - MODE=standalone

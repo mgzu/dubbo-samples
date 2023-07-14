@@ -1,0 +1,8 @@
+version: '3.9'
+name: 'dubbo-demo-zookeeper'
+services:
+  nacos:
+    image: zookeeper:3.8.1
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
