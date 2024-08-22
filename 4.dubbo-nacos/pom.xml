@@ -16,8 +16,8 @@
 
     <properties>
         <revision>0.1</revision>
-        <java.source.version>17</java.source.version>
-        <java.target.version>17</java.target.version>
+        <java.source.version>21</java.source.version>
+        <java.target.version>21</java.target.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- dependencies version -->
         <dubbo.version>3.2.4</dubbo.version>
@@ -88,7 +88,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <fork>true</fork>
+                    <fork>false</fork>
                     <source>${java.source.version}</source>
                     <target>${java.target.version}</target>
                     <encoding>${project.build.sourceEncoding}</encoding>
