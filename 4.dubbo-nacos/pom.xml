@@ -20,8 +20,8 @@
         <java.target.version>21</java.target.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- dependencies version -->
-        <dubbo.version>3.2.15</dubbo.version>
-        <spring-boot.version>3.3.2</spring-boot.version>
+        <dubbo.version>3.3.0</dubbo.version>
+        <spring-boot.version>3.3.3</spring-boot.version>
         <!-- maven plugin -->
         <maven-compiler-plugin.version>4.0.0-beta-1</maven-compiler-plugin.version>
     </properties>
